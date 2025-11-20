@@ -1,0 +1,281 @@
+{
+  "home": {
+    "title": "Stand with Gaza. Every Donation Matters ❤️",
+    "description": "Join thousands of supporters helping families in need — your contribution brings food, medicine, and hope.",
+    "donate": "Donate Now",
+    "section_title": "Together, We Make a Difference 🌍",
+    "meals": "Meals Delivered",
+    "donations": "Donations Raised",
+    "families": "Families Supported",
+
+    "campaign_food": "Emergency Food",
+    "campaign_food_desc": "Provide meals to families in need.",
+    "campaign_rebuild": "Rebuilding Homes",
+    "campaign_rebuild_desc": "Support reconstruction efforts for damaged homes.",
+    "campaign_medical": "Medical Aid",
+    "campaign_medical_desc": "Fund essential medical supplies and care.",
+    "featured_campaigns": "Featured Campaigns",
+    "donate_now": "Donate Now",
+    "view_all_campaigns": "View All Campaigns",
+
+    "step1_title": "Choose a Campaign",
+    "step1_desc": "Browse verified campaigns and pick one to support.",
+    "step2_title": "Donate Securely",
+    "step2_desc": "Use secure payment methods to make your contribution.",
+    "step3_title": "Track Impact",
+    "step3_desc": "See how your donation helps people on the ground.",
+    "how_it_works": "How it works"
+    ,
+    "hero_image_alt": "Gaza"
+  },
+  "navbar": {
+    "home": "Home",
+  "campaigns": "Campaigns",
+  "about": "About",
+  "donate": "Donate Now",
+  "login": "Login",
+  "register": "Register",
+  "logout": "Logout",
+  "admin": "Admin Panel"
+  ,
+  "toggle_menu": "Toggle menu",
+  "lang_ar": "العربية",
+  "lang_en": "EN",
+  "logo_alt": "logo",
+  "brand": "GazaPulse",
+  "toggle_theme": "Toggle theme"
+  ,
+  "decimals": "Show cents"
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  },
+  "campaigns": {
+  "title": "Active Campaigns",
+  "search": "Search campaigns...",
+  "currency_symbol": "$",
+  "items": {
+    "1": {
+      "title": "Emergency Relief for Gaza Families",
+      "description": "Help provide food, medicine, and shelter for displaced families in Gaza."
+    },
+    "2": {
+      "title": "Rebuild a School in Rafah",
+      "description": "Contribute to rebuilding a destroyed school and giving kids hope again."
+    },
+    "3": {
+      "title": "Water Wells for Villages",
+      "description": "Support drilling clean water wells for remote Palestinian communities."
+    },
+    "4": {
+      "title": "Support Orphan Children",
+      "description": "Your monthly donation helps feed, clothe, and educate orphans in Gaza."
+    },
+    "5": {
+      "title": "Healthcare for the Injured",
+      "description": "Help provide medicine and surgeries for those injured in the ongoing crisis."
+    },
+    "6": {
+      "title": "Solar Energy for Hospitals",
+      "description": "Install solar panels to keep life-saving equipment running during power cuts."
+    }
+  },
+  "all": "All",
+  "emergency": "Emergency",
+  "education": "Education",
+  "development": "Development",
+  "charity": "Charity",
+  "medical": "Medical",
+  "view_details": "View Details",
+  "donate_now": "Donate Now",
+  "donate_to_campaign": "Donate to this Campaign",
+  "prev": "Previous",
+  "page": "Page",
+  "next": "Next",
+  "not_found": "Campaign not found.",
+  "back": "Back"
+}
+,
+"about": {
+  "title": "About Our Platform",
+  "description": "GazaPulse is a humanitarian donation platform that connects generous people around the world with communities in need. Our mission is to bring hope and support to those affected by crises, poverty, and displacement.",
+  "learn_more": "Learn more",
+  "vision_title": "Our Vision",
+  "vision_text": "To build a world where compassion drives action and every contribution creates real change.",
+  "mission_title": "Our Mission",
+  "mission_text": "We empower individuals and organizations to donate easily and transparently to causes that matter.",
+  "values_title": "Our Values",
+  "values": ["Transparency", "Empathy", "Collaboration"],
+  "image_alt": "About our platform"
+},
+"donate": {
+  "title": "Make a Donation",
+  "fill_fields": "Please fill in all required fields.",
+  "name": "Full Name",
+  "email": "Email Address",
+  "amount": "Donation Amount",
+  "type": "Donation Type",
+  "once": "One-time Donation",
+  "monthly": "Monthly Donation",
+  "day_label": "Day of each month to charge",
+  "day_placeholder": "e.g. 10",
+  "note": "Additional Note",
+  "button": "Donate Now",
+  "success": "Thank you! Your donation was submitted successfully 🎉"
+}
+,
+"auth": {
+  "login_title": "Login to your account",
+  "register_title": "Create a new account",
+  "email": "Email Address",
+  "password": "Password",
+  "name": "Full Name",
+  "email_placeholder": "Enter your email",
+  "password_placeholder": "Enter your password",
+  "name_placeholder": "Enter your full name",
+  "login_btn": "Login",
+  "register_btn": "Register",
+  "fill_fields": "Please fill in all fields.",
+  "no_account": "Don't have an account?",
+  "have_account": "Already have an account?",
+  "register_here": "Register here",
+  "login_here": "Login here"
+},
+"dashboard": {
+  "title": "Admin Dashboard",
+  "subtitle": "Donation insights — Islamic Charity Style",
+  "total_amount": "Total Amount",
+  "total_donations": "Total Donations",
+  "monthly_donations": "Monthly Donations",
+  "last_donation": "Last Donation",
+  "over_time": "Donations Over Time",
+  "recent_donations": "Recent Donations",
+  "clear_all": "Clear All Donations",
+  "table": {
+    "name": "Name",
+    "email": "Email",
+    "amount": "Amount",
+    "type": "Type",
+    "date": "Date"
+  }
+  ,
+  "donation_type_ratio": "Donation Type Ratio",
+  "monthly_suffix": "Monthly",
+  "monthly_totals": "Monthly Totals",
+  "months_suffix": "Months",
+  "donations_per_campaign": "Donations per Campaign",
+  "campaigns_suffix": "Campaigns",
+  "no_filtered": "No donations match your filters 😅"
+  ,
+  "chart_label": "Donation Amount",
+  "last_none": "-",
+  "not_provided": "-"
+},
+"sidebar": {
+  "dashboard": "Dashboard",
+  "campaigns": "Campaigns",
+  "add_campaign": "Add Campaign",
+  "logout": "Logout",
+  "open": "Open sidebar"
+},
+
+  "admin": {
+    "campaigns": {
+      "title": "Campaigns",
+      "add": "Add Campaign",
+      "create": "Create Campaign",
+      "edit": "Edit Campaign",
+      "table": {
+        "title": "Title",
+        "category": "Category",
+        "goal": "Goal",
+        "raised": "Raised",
+        "actions": "Actions"
+      },
+      "empty": "No campaigns yet."
+    }
+  },
+
+  "form": {
+    "title": "Title",
+    "description": "Description",
+    "category": "Category",
+    "goal": "Goal ($)",
+    "image_url": "Image URL"
+  },
+
+
+
+  "common": {
+    "edit": "Edit",
+    "delete": "Delete",
+    "save_changes": "Save Changes",
+    "cancel": "Cancel",
+    "not_provided": "-"
+  },
+"donateRecurring": {
+  "title": "Join Our Monthly Giving Program",
+  "name": "Full Name",
+  "name_placeholder": "Enter your full name",
+  "email": "Email Address",
+  "email_placeholder": "Enter your email",
+  "amount": "Donation Amount ($)",
+  "amount_placeholder": "Enter amount",
+  "frequency": "Donation Frequency",
+  "monthly": "Monthly",
+  "quarterly": "Quarterly",
+  "yearly": "Yearly",
+  "donate_btn": "Donate Recurring",
+  "fill_fields": "Please fill in all fields.",
+  "thank_you": "Thank you for becoming a recurring donor!"
+}
+,
+"campaign_label": "Campaign Name",
+
+  "profile": {
+    "role": {
+      "admin": "Administrator",
+      "donor": "Donor"
+    },
+    "edit_button": "✏️ Edit Profile",
+    "reset_button": "🔄 Reset Profile",
+    "total_donations": "Total Donations",
+    "donations_count": "Donations Count",
+    "last_donation": "Last Donation",
+    "recent_donations": "Recent Donations",
+    "no_donations": "No donations yet 😅",
+    "table": {
+      "amount": "Amount",
+      "type": "Type",
+      "date": "Date"
+    },
+    "type": {
+      "once": "One-time",
+      "monthly": "Monthly"
+    },
+    "edit_modal": {
+      "title": "Edit Profile",
+      "name_placeholder": "Name",
+      "email_placeholder": "Email",
+      "avatar_placeholder": "Avatar URL",
+      "change_password": "Change Password",
+      "new_password_placeholder": "New Password",
+      "confirm_password_placeholder": "Confirm Password",
+      "save": "Save",
+      "cancel": "Cancel"
+    },
+    "alert": {
+      "password_mismatch": "Passwords do not match ❌",
+      "password_updated": "Password updated successfully ✅"
+    },
+    "confirm": {
+      "reset": "Are you sure you want to reset your profile?"
+    }
+    ,
+    "settings": {
+      "title": "Settings",
+      "currency_label": "Currency",
+      "decimals_label": "Show cents"
+    }
+  }
+}

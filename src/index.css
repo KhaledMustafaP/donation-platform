@@ -1,0 +1,33 @@
+@custom-variant dark (&:where(.dark, .dark *));
+
+@import "tailwindcss";
+
+/* ✅ نثبت الوضع الفاتح كمبدأي بدون أي تلميحات من النظام */
+:root {
+  color-scheme: only light;
+  background-color: #f9fafb; /* خلفية فاتحة افتراضية */
+  color: #111827; /* نص داكن افتراضي */
+}
+
+/* حتى لو الجهاز مفعل dark mode، نتجاهله تمامًا */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: only light;
+    background-color: #f9fafb;
+    color: #111827;
+  }
+}
+
+/* ✅ نفعّل الوضع الليلي فقط لما نضيف كلاس .dark */
+@layer base {
+  html.dark {
+    color-scheme: dark;
+    background-color: #111827;
+    color: #f9fafb;
+  }
+}
+
+/* انتقالات ناعمة بين الوضعين */
+html, body {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
