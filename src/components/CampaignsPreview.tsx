@@ -13,7 +13,7 @@ export default function CampaignsPreview() {
       title: t("home.campaign_food"),
       desc: t("home.campaign_food_desc"),
       image:
-        "https://images.unsplash.com/photo-1606944835108-7d9dbbba7d6f?auto=format&fit=crop&w=1200&q=80",
+        "imgs/donate1.jpg",
       raised: 7400,
       goal: 10000,
     },

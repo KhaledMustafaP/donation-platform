@@ -15,6 +15,11 @@ import AdminLayout from "./components/layout/AdminLayout";
 import Profile from "./pages/profile/Profile";
 import CampaignDetails from "./pages/campaigns/CampaignDetails";
 import ZakatCalculator from "./pages/user/ZakatCalculator";
+import ZakatPage from "./pages/services/Zakat";
+import SacrificePage from "./pages/services/Sacrifice";
+import GiftPage from "./pages/services/Gift";
+import SmsPage from "./pages/services/SmsPage";
+import RecurringDonationPage from "./pages/services/Recurring";
 
 function App() {
   return (
@@ -39,6 +44,11 @@ function App() {
             </AdminLayout>
           }
         />
+        <Route path="/zakat" element={<ZakatPage />} />
+<Route path="/sacrifice" element={<SacrificePage />} />
+<Route path="/gift" element={<GiftPage />} />
+<Route path="/sms" element={<SmsPage />} />
+<Route path="/recurring" element={<RecurringDonationPage />} />
         <Route
           path="/admin/campaigns"
           element={

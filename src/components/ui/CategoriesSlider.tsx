@@ -1,74 +1,68 @@
 import { ArrowRight } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import { useTranslation } from "react-i18next";
 
 // @ts-ignore: CSS module imports without type declarations
 import "swiper/css";
-// @ts-ignore: CSS module imports without type declarations
+// @ts-ignore
 import "swiper/css/pagination";
-// @ts-ignore: CSS module imports without type declarations
+// @ts-ignore
 import "swiper/css/navigation";
 
-const categories = [
-  {
-    title: "ساعد مريضًا",
-    description: "رعاية صحية للمتعففين",
-    image: "/images/ihsan/medical.jpg",
-  },
-  {
-    title: "ساند معسرًا",
-    description: "سداد ديون المعسرين",
-    image: "/images/ihsan/debt.jpg",
-  },
-  {
-    title: "اكفل يتيمًا",
-    description: "تسهيل حياة الأيتام",
-    image: "/images/ihsan/orphan.jpg",
-  },
-  {
-    title: "أخرج زكاةً",
-    description: "إيصال الزكاة للمستحقين",
-    image: "/images/ihsan/zakat.jpg",
-    tag: "قَبِل الزكاة",
-  },
-  {
-    title: "أغث متضررًا",
-    description: "المشاريع الإغاثية لدول العالم",
-    image: "/images/ihsan/relief.jpg",
-  },
-  {
-    title: "وفر مسكنًا",
-    description: "توفير مساكن للمتعففين",
-    image: "/images/ihsan/shelter.jpg",
-  },
-  {
-    title: "فرّج كربًا",
-    description: "تفريج عن المكروبين",
-    image: "/images/ihsan/help.jpg",
-  },
-  {
-    title: "أطعم متعففًا",
-    description: "توفير سلال غذائية",
-    image: "/images/ihsan/food.jpg",
-  },
-];
-
 export default function CategoriesSlider() {
+  const { t, i18n } = useTranslation();
+
+  // 🧩 نقرأ النصوص من ملفات الترجمة بدل الثابت
+  const categories = [
+    {
+      title: t("categories.medical.title"),
+      description: t("categories.medical.description"),
+      image: "imgs/helpPatient.jpg",
+    },
+    {
+      title: t("categories.debt.title"),
+      description: t("categories.debt.description"),
+      image: "imgs/debt.jpg",
+    },
+    {
+      title: t("categories.orphan.title"),
+      description: t("categories.orphan.description"),
+      image: "imgs/orphan.jpg",
+    },
+    {
+      title: t("categories.zakat.title"),
+      description: t("categories.zakat.description"),
+      image: "imgs/zakat.jpg",
+      tag: t("categories.zakat.tag"),
+    },
+    
+    {
+      title: t("categories.shelter.title"),
+      description: t("categories.shelter.description"),
+      image: "imgs/categoriesSliderShelter.jpg",
+    },
+    {
+      title: t("categories.food.title"),
+      description: t("categories.food.description"),
+      image: "imgs/donate1.jpg",
+    },
+  ];
+
   return (
     <section className="py-16 bg-gray-50 dark:bg-gray-900 transition-colors">
       <div className="max-w-7xl mx-auto px-6">
-        
-        {/* Section Title */}
+        {/* 🌍 العنوان */}
         <div className="text-center mb-12">
           <h2 className="text-4xl font-extrabold text-[#0f5132] dark:text-green-400">
-            مجالات الإحسان
+            {t("categories.section_title")}
           </h2>
           <p className="text-gray-600 dark:text-gray-300 mt-2">
-            فُرَص للعطاء في مختلف المجالات الخيرية
+            {t("categories.section_subtitle")}
           </p>
         </div>
 
-        {/* Swiper Slider */}
+        {/* 🌀 السلايدر */}
         <Swiper
           modules={[Autoplay, Pagination, Navigation]}
           autoplay={{ delay: 2500, disableOnInteraction: false }}
@@ -81,42 +75,39 @@ export default function CategoriesSlider() {
             1024: { slidesPerView: 4 },
           }}
           className="pb-10"
+          dir={i18n.language === "ar" ? "rtl" : "ltr"} // ✅ الاتجاه حسب اللغة
         >
           {categories.map((item, index) => (
             <SwiperSlide key={index}>
               <div className="relative h-64 rounded-2xl overflow-hidden shadow-lg group cursor-pointer">
-
-                {/* Background Image */}
                 <img
                   src={item.image}
+                  alt={item.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition duration-700"
                 />
 
-                {/* Overlay Gradient */}
                 <div className="absolute inset-0 bg-linear-to-t from-green-900/80 via-green-800/20 to-transparent" />
 
-                {/* Tag */}
                 {item.tag && (
                   <span className="absolute top-3 right-3 bg-orange-500 text-white text-xs px-3 py-1 rounded-full shadow">
                     {item.tag}
                   </span>
                 )}
 
-                {/* Text Content */}
-                <div className="absolute bottom-4 left-4 right-4 text-white">
+                <div
+                  className={`absolute bottom-4 left-4 right-4 ${
+                    i18n.language === "ar" ? "text-right" : "text-left"
+                  } text-white`}
+                >
                   <h3 className="text-xl font-bold">{item.title}</h3>
                   <p className="text-sm opacity-90">{item.description}</p>
 
-                  {/* Arrow */}
-                  <button className="mt-3 bg-white/20 hover:bg-white/30 text-white p-2 rounded-full transition">
-                    <ArrowRight className="w-5 h-5" />
-                  </button>
+                  
                 </div>
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
-
       </div>
     </section>
   );

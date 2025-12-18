@@ -28,11 +28,74 @@
     ,
     "hero_image_alt": "Gaza"
   },
+
+  "hero": {
+    "slide1": {
+      "title": "Help Save a Life in Need",
+      "description": "Your donation today makes a real difference. Reach out to those waiting for help."
+    },
+    "slide2": {
+      "title": "Be a Support for a Poor Family",
+      "description": "Help provide food, medicine, and clothing to those most in need."
+    },
+    "slide3": {
+      "title": "Support Orphans’ Future",
+      "description": "With your help, we can give them a better life and a brighter tomorrow."
+    },
+    "cta": "Donate Now"
+  },
+  "services": {
+    "section_title": "Ihsan Services",
+    "section_subtitle": "Different ways to make giving easy and accessible",
+    "more": "More",
+    "zakat": {
+      "title": "Zakat",
+      "description": "Easily calculate and pay your zakat through the platform."
+    },
+    "sacrifice": {
+      "title": "Sacrifices",
+      "description": "Delegate your Udhiya or Aqiqah and distribute it to the needy."
+    },
+    "gift": {
+      "title": "Gift Donations",
+      "description": "Send donations as gifts to family and friends on special occasions."
+    },
+    "sms": {
+      "title": "SMS Donations",
+      "description": "Donate quickly through text messages for urgent causes."
+    },
+    "campaign": {
+      "title": "Campaigns",
+      "description": "Create your own fundraising campaign easily."
+    },
+    "recurring": {
+      "title": "Recurring Donation",
+      "description": "Set up automatic monthly donations to support charitable projects."
+    }
+  }
+,
+
+  
+  "categories": {
+    "section_title": "Fields of Charity",
+    "section_subtitle": "Opportunities to give in various charitable causes",
+
+    "medical": { "title": "Help a Patient", "description": "Healthcare for those in need" },
+    "debt": { "title": "Support a Debtor", "description": "Paying off debts for the poor" },
+    "orphan": { "title": "Sponsor an Orphan", "description": "Making orphans’ lives easier" },
+    "zakat": { "title": "Give Zakat", "description": "Delivering zakat to the needy", "tag": "Accepts Zakat" },
+    "relief": { "title": "Provide Relief", "description": "Humanitarian relief projects" },
+    "shelter": { "title": "Provide Shelter", "description": "Housing for needy families" },
+    "help": { "title": "Ease Distress", "description": "Helping those in hardship" },
+    "food": { "title": "Feed the Hungry", "description": "Providing food baskets" }
+  }
+
+,
   "navbar": {
     "home": "Home",
   "campaigns": "Campaigns",
   "about": "About",
-  "donate": "Donate Now",
+  "donate": "Donate",
   "login": "Login",
   "register": "Register",
   "logout": "Logout",

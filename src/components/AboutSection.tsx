@@ -10,7 +10,7 @@ export default function AboutSection() {
       <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
         {/* الصورة */}
         <motion.img
-          src="https://images.unsplash.com/photo-1606741965673-27c3d0fda9f4?auto=format&fit=crop&w=1200&q=80"
+          src="imgs/donate1.jpg"
           alt={t('about.image_alt')}
           className="rounded-2xl shadow-lg"
           initial={{ opacity: 0, x: -40 }}
